@@ -1,0 +1,13 @@
+# IDE directories
+.idea/
+.vscode/
+
+# Build output
+out/
+target/
+
+# Assignment directories (if needed for temporary/old assignments)
+src/main/java/assignment*
+
+# Test directory (if not in use)
+src/test/

@@ -1,6 +1,6 @@
 /**
  * C program to interweave two strings
- * 
+ *
  * @author Bhavya Jain
  */
 
@@ -8,6 +8,13 @@
 #include <string.h>
 #include <stdlib.h>
 
+/**
+ * Function to interweave two strings (C-style)
+ * 
+ * @param s1 First string
+ * @param s2 Second string
+ * @return Interwoven string
+ */
 char *interweave(char *s1, char *s2)
 {
     int n = strlen(s1);

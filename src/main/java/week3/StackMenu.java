@@ -9,6 +9,11 @@ import java.util.Scanner;
  * @author Bhavya Jain
  */
 public class StackMenu {
+    /**
+     * Run the Average Stack menu
+     * 
+     * @param sc Scanner object for input
+     */
     public static void run(Scanner sc) {
         IOUtils io = new IOUtils();
         AverageStack stack = new AverageStack();

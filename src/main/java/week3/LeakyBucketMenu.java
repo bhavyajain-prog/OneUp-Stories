@@ -9,6 +9,12 @@ import java.util.Scanner;
  * @author Bhavya Jain
  */
 public class LeakyBucketMenu {
+
+    /**
+     * Runs the Leaky Bucket menu.
+     * 
+     * @param sc the Scanner object for user input
+     */
     public static void run(Scanner sc) {
         IOUtils io = new IOUtils();
         LeakyBucket bucket = null;

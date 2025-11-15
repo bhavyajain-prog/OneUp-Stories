@@ -3,7 +3,8 @@ package week3;
 import utils.Node;
 
 /**
- * Leaky Bucket implementation for rate limiting in simulation of network buffer.
+ * Leaky Bucket implementation for rate limiting in simulation of network
+ * buffer.
  * 
  * @author Bhavya Jain
  */
@@ -20,6 +21,12 @@ public class LeakyBucket {
         this.size = 0;
     }
 
+    /**
+     * Enqueue an item into the leaky bucket.
+     * If the bucket is full, the oldest item is dropped.
+     * 
+     * @param item the integer item to enqueue
+     */
     public void enqueue(int item) {
         if (isFull()) {
             head = head.next;
@@ -35,10 +42,21 @@ public class LeakyBucket {
         size++;
     }
 
+    /**
+     * Check if the leaky bucket is full.
+     * 
+     * @return {@code boolean} true if the bucket is full, false otherwise
+     */
     public boolean isFull() {
         return size == capacity;
     }
 
+    /**
+     * Process up to k items from the leaky bucket and drop them from the buffer.
+     * 
+     * @param k the maximum number of items to process
+     * @return {@code int[]} array of processed items
+     */
     public int[] process(int k) {
         int[] result = new int[k > size ? size : k];
         int i = 0;

@@ -12,6 +12,11 @@ import java.io.InputStreamReader;
  */
 
 public class RunCProgram {
+    /**
+     * Compiles and runs a C program given its filename.
+     * 
+     * @param fileName the name of the C file to compile and run
+     */
     public void run(String fileName) {
         try {
             String os = System.getProperty("os.name").toLowerCase();
